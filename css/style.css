@@ -3,4 +3,117 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid tomato; */
+}
+
+body{
+    height: 900px;
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+    grid-template-rows: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+    justify-content: center;
+    background: linear-gradient(to right, #FEAF00, #F8D442);
+}
+
+main{
+    width: 475px;
+    height: 550px;
+    grid-column: 4 / 9;
+    grid-row: 3 / 8;
+    padding: 44px 30px 41px 30px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card_header{
+    width: 342px;
+    height: 135px;
+}
+
+.card_box1{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    h1{
+        font-size: 32px;
+    }
+}
+
+.card_box101{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+        color: rgba(108, 108, 108, 1);
+    }
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    width: 415px;
+    height: 280px;
+    gap: 27px;
+}
+
+.card_box2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card_box201{
+    width: 415px;
+    height: 71px;
+    form{
+        position: relative;
+        top: 10px;
+        width: 415px;
+        height: 44px;
+        border-radius: 5px;
+        padding: 11px 300px 0 15px;
+        color: rgba(205, 205, 205, 1);
+        border: 1px solid gray;
+        input{
+            border: none;
+            outline: none;
+        }
+    }
+    p{
+        color: rgba(108, 108, 108, 1);
+        font-size: 14px;
+    }
+}
+
+.card_button{
+    display: flex;
+    background-color: rgba(254, 175, 0, 1);
+    a{
+        width: 415px;
+        height: 44px;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        padding: 14px 180px 13px 180px;
+        border-radius: 5px;
+    }
+}
+
+.card_reset{
+    display: flex;
+    width: 277px;
+    height: 17px;
+    p{
+        font-size: 14px;
+    }
+    a{
+        color: rgba(254, 175, 0, 1);
+    }
 }
