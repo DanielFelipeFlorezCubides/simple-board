@@ -10,8 +10,10 @@ body{
     height: 900px;
     display: grid;
     grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
-    grid-template-rows: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
-    justify-content: center;
+    /* grid-template-rows: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px; */
+    place-content: center;
+    place-items: center;
+    overflow-x: auto;
     background: linear-gradient(to right, #FEAF00, #F8D442);
 }
 
@@ -95,6 +97,7 @@ main{
 .card_button{
     display: flex;
     background-color: rgba(254, 175, 0, 1);
+    border-radius: 5px;
     a{
         width: 415px;
         height: 44px;
@@ -102,7 +105,6 @@ main{
         color: white;
         text-decoration: none;
         padding: 14px 180px 13px 180px;
-        border-radius: 5px;
     }
 }
 
