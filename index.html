@@ -8,6 +8,7 @@
     <script></script>
 </head>
 <body>
+    <!-- lateral -->
     <div class="lateral">
         <section class="title">
             <h1>CRUD OPERATIONS</h1>
@@ -56,5 +57,43 @@
             </a>            
         </section>
     </div>
+    <!-- ending lateral -->
+      <!-- Contenedor principal del contenido -->
+      <div class="main-content">
+        <h1 class="main-title">Students List</h1>
+        
+        <!-- Tabla de estudiantes -->
+        <table class="students-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Enroll Number</th>
+                    <th>Date of admission</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas repetidas (usar datos reales en producción) -->
+                <tr>
+                    <td>Karthi</td>
+                    <td>karthi@pmmail.com</td>
+                    <td>7305477760</td>
+                    <td>1234567305477760</td>
+                    <td>08-Dec, 2021</td>
+                </tr>
+                <!-- ... más filas ... -->
+            </tbody>
+        </table>
+
+        <!-- Botón y paginación -->
+        <div class="table-footer">
+            <button class="add-button">
+                ADD NEW STUDENT
+            </button>
+            <div class="page-info">110 # 83</div>
+        </div>
+    </div>
+
 </body>
 </html>

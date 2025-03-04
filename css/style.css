@@ -50,7 +50,7 @@
         color: var(--color-2);
     }
 }
-
+/* botones en a  */
 .lateral-a {
     display: flex;
     /* background: violet; */
@@ -91,7 +91,7 @@
 
 }
 
-/* ******************* */
+/* *********eltimo buttom********** */
 .logout {
     display: flex;
    margin-top: 19.27vh ;
@@ -120,10 +120,96 @@
         font-size:1.03vw ;
         color: var(--color-1);
     }
-
-
 }
 .boton-2:hover {
     background-color: yellow; /* Se vuelve amarillo al pasar el mouse */
 
+}
+
+
+/* prueba */
+/* ========== MAIN CONTENT ========== */
+.main-content {
+    margin-left: 29vw; /* Igual al ancho del lateral */
+    padding: 2rem;
+}
+
+.main-title {
+    font-family: var(--font-bold);
+    color: var(--color-1);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* ========== TABLA ========== */
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.students-table th,
+.students-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-6);
+    position: relative;
+}
+
+.students-table th {
+    background-color: var(--color-8);
+    color: var(--color-1);
+    font-family: var(--font-bold);
+}
+
+/* Líneas verticales */
+.students-table tr td:first-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--color-8);
+}
+
+/* ========== BOTÓN ========== */
+.add-button {
+    position: relative;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-7);
+    border: 1px solid var(--color-6);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-medium);
+    color: var(--color-1);
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.add-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--color-8);
+    border-radius: 3px 0 0 3px;
+}
+
+.add-button:hover {
+    background-color: var(--color-8);
+    color: var(--color-7);
+}
+
+/* Paginación */
+.page-info {
+    margin-top: 1rem;
+    color: var(--color-2);
+    font-family: var(--font-medium);
+    font-size: 0.9rem;
 }
