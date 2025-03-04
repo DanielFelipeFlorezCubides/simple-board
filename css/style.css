@@ -1,6 +1,129 @@
 @import url(variables.css);
-*{
+
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+
+.lateral {
+    display: flex;
+    background-color: var(--color-7);
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 0;
+    width: 29vw;
+    height: 100%;
+    /* Usa la altura dinámica del viewport en navegadores modernos */
+}
+
+.title {
+    margin-top: 18px;
+    font-family: "Montserrat-Bold";
+    font-size: 1.39vw;
+    text-align: center;
+    /* justify-content: center; */
+    border-left: 7px solid var(--color-8);
+    padding-left: 0.92vw;
+}
+
+.present {
+    display: flex;
+    flex-direction: column;
+    /* background: yellow; */
+    gap: 10px;
+
+    img {
+        border-radius: 100%;
+        margin-top: 54px;
+        width: 9.56vw;
+    }
+
+    h2 {
+        font-family: "Montserrat-Bold";
+        font-size: 17px;
+        color: var(--color-1);
+    }
+    p{
+        font-family: "Montserrat-Medium";
+        font-size: 17px;
+        color: var(--color-2);
+    }
+}
+
+.lateral-a {
+    display: flex;
+    /* background: violet; */
+    flex-direction: column;
+    margin-top: 91px;
+    gap: 15px;
+    /* justify-content: space-between; */
+}
+
+.boton {
+    /* background: white; */
+    display: flex;
+    flex-direction: row;
+    color: var(--color-1);
+    width: 10.19vw ;
+    height: 41px;
+    /* text-align: center; */
+    /* justify-content: space-between; */
+    align-items: center;    
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer; 
+    img{
+        margin-right: 0;
+        /* background: black; */
+    }
+    p{
+        /* background: green; */
+        font-family: "Montserrat-Medium";
+        font-size:1.03vw ;
+        color: var(--color-1);
+    }
+
+
+}
+.boton:hover {
+    background-color: yellow; /* Se vuelve amarillo al pasar el mouse */
+
+}
+
+/* ******************* */
+.logout {
+    display: flex;
+   margin-top: 19.27vh ;
+   margin-bottom: 3.91vh ;
+}
+.boton-2 {
+    /* background: white; */
+    display: flex;
+    flex-direction: row;
+    color: var(--color-1);
+    width: 10.19vw ;
+    height: 41px;
+    /* text-align: center; */
+    /* justify-content: space-between; */
+    align-items: center;    
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer; 
+    img{
+        margin-left: 0;
+        /* background: black; */
+    }
+    p{
+        /* background: green; */
+        font-family: "Montserrat-Medium";
+        font-size:1.03vw ;
+        color: var(--color-1);
+    }
+
+
+}
+.boton-2:hover {
+    background-color: yellow; /* Se vuelve amarillo al pasar el mouse */
+
 }
