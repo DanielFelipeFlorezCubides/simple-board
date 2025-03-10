@@ -3,7 +3,9 @@ const ENV = async()=>{ // Obtener todos los usuarios del archivo json
     let data = await peticion.json();
     return data
 }
-export const users = await ENV();
+
+export let users = [];
+ENV().then(data => users = data);
 
 export const validation = (data)=>{ // validar los usuarios del archivo json segun los datos obtenidos del formulario
     for (let i = 0; i < users.length; i++) {
