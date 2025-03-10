@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="java/main.js" defer type="module"></script>
     <title>Sign-in</title>
 </head>
 <body>
+    <dialog id="dialog__login">
+        <div class="dialog__header">
+            <span id="dialog__login_close">X</span>
+        </div>
+        <div id="dialog__message" class="dialog__main">
+            
+        </div>
+        <div class="dialog__footer"></div>
+    </dialog>
     <main>
         <section class="card_header">
             <div class="card_box1">
@@ -18,26 +28,25 @@
             </div>
         </section>
         <section class="card_content">
-            <div class="card_box2">
-                <div class="card_box201">
-                    <p>Email</p>
-                    <form action="">
+            </form id="form__login" action="?" method="get">
+                <div class="card_box2">
+                    <div class="card_box201">
+                        <label>Email</label> <br>
                         <input type="text" placeholder="Enter your email" required>
-                    </form>
-                </div>
-                <div class="card_box201">
-                    <p>Password</p>
-                    <form action="">
+                    </div>
+                    <div class="card_box201">
+                        <Label>Password</Label> <br>
                         <input type="text" placeholder="Enter your password" required>
-                    </form>
+                    </div>
+                    <div class="card_button">
+                        <input type="submit" value="SIGN IN">
+                    </div>
+
+                    <div class="card_reset">
+                        <p>Forgot your password? <a href="#">Reset Password</a></p>
+                    </div>
                 </div>
-                <div class="card_button">
-                    <a href="#">SIGN IN</a>
-                </div>
-            </div>
-            <div class="card_reset">
-                <p>Forgot your password? <a href="#">Reset Password</a></p>
-            </div>
+            </form>
         </section>
     </main>
 </body>
